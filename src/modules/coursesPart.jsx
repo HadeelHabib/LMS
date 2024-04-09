@@ -1,5 +1,4 @@
 import { styles } from '@/configs/constant'
-import React from 'react'
 
 const CoursePart = () => {
   return (

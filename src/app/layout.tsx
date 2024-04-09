@@ -1,11 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Josefin_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import Provider from "./provider";
 import Header from "@/shared/widgets/header/header";
 import Footer from "@/shared/widgets/footer/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-Poppins",
+});
+
+const josefin = Josefin_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-Josefin",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,11 +29,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`bg-gradient-to-b from-gray-900 to-black`}>
+      <body
+        className={`bg-gradient-to-b from-gray-900 to-black ${poppins.variable} ${josefin.variable}`}
+      >
         <Provider>
-          <Header/>
+          <Header />
           {children}
-          <Footer/>
+          <Footer />
         </Provider>
       </body>
     </html>
