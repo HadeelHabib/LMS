@@ -1,4 +1,4 @@
-import Root from "@/modules/root";
+import Root from "@/shared/modules/root";
 
 const Page = () => {
   return <Root />;

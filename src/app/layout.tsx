@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Josefin_Sans, Poppins } from "next/font/google";
+import {  Josefin_Sans, Poppins } from "next/font/google";
 import "./globals.css";
 import Provider from "./provider";
 import Header from "@/shared/widgets/header/header";

@@ -8,6 +8,8 @@ import client3 from "@/assets/client-3.jpg";
 import Image from "next/image";
 import FeedBackPart from "./feedBackPart";
 
+// 1000px: = lg: => 1200px: = xl: => 1500px: = 2xl: => 768px: = md:
+
 const Hero = () => {
   return (
     <>
@@ -26,17 +28,17 @@ const Hero = () => {
             <br /> Career with us
           </h2>
           <br />
-          <p className="text-[#edfff4] font-Josefin font-[600] text-[18px] 2xl:!w-[55%] xl:!w-[78%]">
+          <p className="text-[#edfff4] font-Josefin font-[600] text-[18px] 2xl:!w-[60%] xl:!w-[78%]">
             Empower your programming journey with LMS
             <br /> dedicated community and comprehensive resources.
           </p>
           <br />
           <br />
-          <div className="2xl:w-[55%] xl:w-[78%] w-[90%] h-[50px] bg-transparent relative">
+          <div className="2xl:w-[60%] xl:w-[78%] w-[90%] h-[50px] bg-transparent relative">
             <input
               type="search"
               placeholder="Search Courses..."
-              className="bg-transparent border dark:border-none dark:bg-[#575757] dark:placeholder:text-[#ffffffdd] rounded-[5px] p-2 w-full h-full outline-none text-[#0000004e] dark:text-[#ffffffe6] text-[20px] font-[500] font-Josefin"
+              className="bg-transparent border rounded-[5px] p-2 w-full h-full outline-none text-[#ffffffe6] text-[20px] font-[500] font-Josefin"
             />
             <div className="absolute flex items-center justify-center w-[50px] cursor-pointer h-[50px] right-0 top-0 bg-[#39c1f3] rounded-r-[5px]">
               <BiSearch className="text-white" size={30} />
@@ -45,17 +47,12 @@ const Hero = () => {
           <br />
           <br />
           <div className="2xl:w-[55%] xl:w-[78%] w-[90%] flex items-center">
-            <Image src={client1} alt="" className="rounded-full" />
-            <Image src={client2} alt="" className="rounded-full " />
+            <Image src={client1} alt="" className="rounded-full ml-[-20px]" />
+            <Image src={client2} alt="" className="rounded-full ml-[-20px]" />
             <Image src={client3} alt="" className="rounded-full ml-[-20px]" />
             <p className="text-lg ml-2">
               500K+ People already trusted us.{" "}
-              <Link
-                href="/courses"
-                style={{
-                  color: "#46e256",
-                }}
-              >
+              <Link href="/courses" className="text-[#46e256]">
                 View Courses
               </Link>{" "}
             </p>
