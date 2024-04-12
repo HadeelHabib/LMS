@@ -26,10 +26,7 @@ type Props = {
     button: string;
 }
 
-type feedBack = {
- img: string;
- name: string;
- description:string;
- comment: string;
- 
+type Buttons = {
+  title: string;
 }
+
