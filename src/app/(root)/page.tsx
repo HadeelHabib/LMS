@@ -1,7 +1,7 @@
 import Root from "@/shared/modules/root";
 
 const Page = () => {
-  return <Root />;
+  return <Root/>;
 };
 
 export default Page;
